@@ -5,21 +5,21 @@
 class Backfill < Formula
   desc "Get paid while long CLI commands and coding agents run"
   homepage "https://backfill.sh"
-  version "0.8.17"
+  version "0.8.18"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shyamsivakumar/backfill/releases/download/v0.8.17/backfill_darwin_amd64.tar.gz"
-      sha256 "fa7f15de94cad7cca718f429bfa10ccdf9430ef920fdd26422c1dbbbe657d25b"
+      url "https://github.com/shyamsivakumar/backfill/releases/download/v0.8.18/backfill_darwin_amd64.tar.gz"
+      sha256 "b67bce819b2488b2eae2e7e98fbf9fb42895e0d9b7fdf5c596293bdbd016e476"
 
       define_method(:install) do
         bin.install "bf"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shyamsivakumar/backfill/releases/download/v0.8.17/backfill_darwin_arm64.tar.gz"
-      sha256 "d43bc6aec23903158999feacf065114be01f0ad42dd8d5d6a19ffcbf61e0b2a0"
+      url "https://github.com/shyamsivakumar/backfill/releases/download/v0.8.18/backfill_darwin_arm64.tar.gz"
+      sha256 "3a6ffa67ccb697bf4ae31d55ebad2366d18ad7d5463fb0cd55d27bd0fb10fb2e"
 
       define_method(:install) do
         bin.install "bf"
@@ -29,15 +29,15 @@ class Backfill < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shyamsivakumar/backfill/releases/download/v0.8.17/backfill_linux_amd64.tar.gz"
-      sha256 "aff0fc1b9abcfa1c6dd3ff46e486654b9448383901840c80c9f7f1be27f10c01"
+      url "https://github.com/shyamsivakumar/backfill/releases/download/v0.8.18/backfill_linux_amd64.tar.gz"
+      sha256 "80d8a00bf0a91627aa1014c2b78c8fef0d84ba24fe5e1ff90251f06b95dadd51"
       define_method(:install) do
         bin.install "bf"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shyamsivakumar/backfill/releases/download/v0.8.17/backfill_linux_arm64.tar.gz"
-      sha256 "445130b1d8662861afa3cb0ed940b43ca646253fc961bcaf0820d3b1239f5ec5"
+      url "https://github.com/shyamsivakumar/backfill/releases/download/v0.8.18/backfill_linux_arm64.tar.gz"
+      sha256 "c323a832101fec06b7f5038093d31b0c0c59ee5a8213a70fc7bb274f75f127d4"
       define_method(:install) do
         bin.install "bf"
       end
